@@ -11,12 +11,15 @@ describe "Dockerfile" do
         set :docker_image, @image.id
     end
 
-   
+    
+    it "is built upon Alpine Linux" do
+        expect(file('/etc/alpine-release')).to exist
+    end
+
     it "should have Go installed" do
         expect(file('/usr/local/go')).to exist
     end
    
-
     it "has app directory" do
         expect(file('/app')).to exist
         expect(file('/app')).to be_directory
@@ -35,6 +38,7 @@ describe "Dockerfile" do
         expect(process('./copycat')).to be_running
         expect(port(2000)).to be_listening
     end
+    
 
     after(:all) do
         system("docker rm -f $(docker ps -a -q -f 'ancestor=#{@image.id}') > /dev/null")
