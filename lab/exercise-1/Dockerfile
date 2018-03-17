@@ -1,7 +1,9 @@
 FROM alpine:3.7
 
+RUN apk add --no-cache nodejs
+
 COPY . /app
 
 WORKDIR /app
 
-CMD ["node", "app.js"]
+RUN npm install
