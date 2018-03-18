@@ -34,7 +34,7 @@ __Bonus question:__ Can you think of another solution that fixes the problem of 
 
 <br/>
 
-# Where's the package.json file?
+## Where's the package.json file?
 
 With a Node.js installation in place, we made a first step towards fixing the tests and running our app. Yet, according to the tests cases it seems like the package.json file, which basically describes a Node project, is missing:
 
