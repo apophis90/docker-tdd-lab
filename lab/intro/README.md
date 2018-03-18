@@ -14,5 +14,8 @@ First, let's take a look at how we achieve this goal for our application code. A
 
 ![whoopsie](http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg)
 
+<p align="center">
+<img src="http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg">
+</p>
 
 ## About Rspec and Serverspec
