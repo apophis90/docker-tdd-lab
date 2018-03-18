@@ -12,10 +12,8 @@ How can we tell if a Docker image actually "works" and meets our demands?
 
 First, let's take a look at how we achieve this goal for our application code. A powerful means to verify the behavior of our code base is unit testing,which gets even more powerful if we combine it with the discipline of Test Driven Development (TTD). In a nutshell, TDD is a technique which defines that the only motivation to write any production code is a failing unit test. Once the code to make a test pass has been written, it undergoes a phase of restructuring, also called _refactoring_. This process is also called the _Red/Green/Refactor_ cycle of TDD.
 
-![whoopsie](http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg)
-
 <p align="center">
-<img src="http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg">
+<img src="http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg" alt="whoopsie">
 </p>
 
 ## About Rspec and Serverspec
